@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Dashboard</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    height: auto;
+    background-image: url('clg.jpg'); /* Replace 'background-image.jpg' with the path to your image */
+    object-fit: cover;
+
+  }
+  
+  .top-left-image {
+    width: 150px; /* Adjust the width of the top-left image */
+    height: 100px; /* Adjust the height of the top-left image */
+    background-image: url('seetha-raju.jpg'); /* Specify the URL of the top-left image */
+    background-size: cover;
+    mix-blend-mode:difference;
+    background-position: top left;
+    position: absolute;
+    top: 10px;
+    border-color: #333;
+    left: 0;
+}
+.top-right-image {
+    width: 150px; /* Adjust the width of the top-right image */
+    height: 100px; /* Adjust the height of the top-right image */
+    background-image: url('logo.png'); /* Specify the URL of the top-right image */
+    background-size: cover;
+    background-position: top right;
+    position: absolute;
+    mix-blend-mode: ;
+    top: 10px;
+    right: 10px;
+}
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    height: 15vh;
+    text-align: center;
+  }
+  .logo {
+    width: 200px; /* Adjust as needed */
+    height: auto; /* Adjust as needed */
+    margin: -10px;
+    padding: 0;
+    border-radius: 15%;
+    background-position: top left;
+  }
+  .dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+  }
+  .day {
+    width: 350px; /* Adjust as needed */
+    padding: 15px;
+    border: 1px solid #ccc;
+    margin-top: 80px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(151, 211, 231, 0.5); /* Semi-transparent lightblue color */
+  }
+  .day a {
+    color: inherit; /* Inherit the color from parent */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Make the link fill the entire day div */
+    cursor: pointer;
+    
+  }
+  a:hover{
+    color: #f21164;
+  }
+</style>
+</head>
+<body>
+  <div class="header">
+    <h1>SMART TIME TABLE</h1>
+    <img src="logo_2.gif" alt="Logo" class="logo">
+  </div>
+  <div class="top-left-image"></div>
+  <div class="top-right-image"></div>
+
+  <div class="dashboard">
+    <div class="day">
+      <a href="sunday.html">
+        <h1>Sunday</h1>
+      </a>
+    </div>
+    <div class="day">
+      <a href="mm1.html">
+        <h1>Monday</h1>
+      </a>
+    </div>
+    <div class="day">
+      <a href="tt1.html">
+        <h1>Tuesday</h1>
+      </a>
+    </div>
+    <div class="day">
+      <a href="w1.html">
+        <h1>Wednesday</h1>
+      </a>
+    </div>
+    <div class="day">
+      <a href="tth1.html">
+        <h1>Thursday</h1>
+      </a>
+    </div>
+    <div class="day">
+      <a href="ff1.html">
+        <h1>Friday</h1>
+      </a>
+    </div>
+    <div class="day">
+      <a href="ss1.html">
+        <h1>Saturday</h1>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

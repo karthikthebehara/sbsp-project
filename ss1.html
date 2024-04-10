@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Scheduler</title>
+</head>
+<body>
+
+<script>
+  // Get current time
+  const currentTime = new Date();
+  const currentHours = currentTime.getHours();
+  const currentMinutes = currentTime.getMinutes();
+  const currentTimeString = `${currentHours}:${currentMinutes}`;
+
+  // Check current time window and redirect to corresponding page
+  if (currentTimeString >= "8:45" && currentTimeString < "9:35") {
+    window.location.href = "s1.html";
+  } else if (currentTimeString >= "9:35" && currentTimeString < "10:25") {
+    window.location.href = "s2.html";
+  } else if (currentTimeString >= "10:25" && currentTimeString < "10:35") {
+    window.location.href = "sbreak1.html";
+  } else if (currentTimeString >= "10:35" && currentTimeString < "11:35") {
+    window.location.href = "s3.html";
+  } else if (currentTimeString >= "11:35" && currentTimeString < "12:15") {
+    window.location.href = "s4.html";
+  } else if (currentTimeString >= "12:15" && currentTimeString < "13:05") {
+    window.location.href = "slunch.html";
+  } else if (currentTimeString >= "13:05" && currentTimeString < "13:55") {
+    window.location.href = "s5.html";
+  } else if (currentTimeString >= "13:55" && currentTimeString < "14:45") {
+    window.location.href = "s6.html";
+  } else if (currentTimeString >= "14:45" && currentTimeString < "14:55") {
+    window.location.href = "sbreak2.html";
+  } else if (currentTimeString >= "14:55" && currentTimeString < "15:45") {
+    window.location.href = "s7.html";
+  } else if (currentTimeString >= "15:45" && currentTimeString < "16:35") {
+    window.location.href = "s8.html";
+  } else {
+    document.write("<p>No active page or break at the moment.</p>");
+  }
+</script>
+
+</body>
+</html>

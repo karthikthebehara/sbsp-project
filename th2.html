@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid;
+}
+#para
+{
+margin-left:1000px;
+margin-top:-40px;
+}
+#para1
+{
+margin-left:-1000px;
+margin-top:-40px;
+}
+#para2
+{
+margin-left:1000px;
+margin-top:-418px;
+}
+#para3
+{
+margin-left:1000px;
+margin-top:3px;
+}
+#para4
+{
+margin-left:1000px;
+margin-top:5px;
+}
+
+.tab
+{
+height:120px;
+width:250px;
+font-size:20px;
+text-align:center;
+}
+</style>
+</head>
+
+<center>
+<body onload="startTime()">
+
+<h1>
+
+<div id="txt"></div>
+
+<script type="text/javascript">
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML = "Time:" + h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000); 
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}       
+</script>
+
+<script type="text/javascript"> 
+        var myDate = new Date(); 
+        var myDay = myDate.getDay();
+        var weekday = ['Sunday', 'Monday', 'Tuesday', 
+            'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+        ]; 
+        document.write("Day : " + weekday[myDay]); 
+        document.write("<br/>"); 
+</script>    
+
+<script type="text/javascript"> 
+        const date = new Date(); 
+        var mDt = myDate.getDate();
+         var myear= myDate.getFullYear();
+          var mmonth=String(myDate.getMonth()+1).padStart(2,"0");
+        document.write("Date:" +mDt+ "-" +mmonth+ "-" +myear);
+</script>
+
+<script>
+window.setInterval(function(){
+	window.location.href="thbreak1.html";
+}, 3000000)
+</script>
+
+<br>
+<h1 id="para1"> 1st Year </h1> <h1 style="margin-top:-40px">2nd Year</h1> <h1 id="para">3rd Year</h1>
+<br>
+<table class="tab"  style="margin-left:-1000px">
+<tr>
+<th>CME-A</th>
+</tr>
+<tr>
+<td>Faculty Name</td>
+</tr>
+<tr>
+<td>Subject Name</td>
+</tr>
+</table>
+<br>
+<table class="tab"  style="margin-left:-1000px">
+<tr>
+<th>CME-B</th>
+</tr>
+<tr>
+<td>Faculty Name</td>
+</tr>
+<tr>
+<td>Subject Name</td>
+</tr>
+</table>
+<br>
+<table class="tab"  style="margin-left:-1000px">
+<tr>
+<th>CME-C</th>
+</tr>
+<tr>
+<td>Faculty Name</td>
+</tr>
+<tr>
+<td>Subject Name</td>
+</tr>
+</table>
+<br>
+<table class="tab" style="margin-top:-418px">
+<tr>
+<th>CME-A</th>
+</tr>
+<tr>
+<td>Faculty Name</td>
+</tr>
+<tr>
+<td>Subject Name</td>
+</tr>
+</table>
+<br>
+<table class="tab" style="margin-top:3px">
+<tr>
+<th>CME-B</th>
+</tr>
+<tr>
+<td>Faculty Name</td>
+</tr>
+<tr>
+<td>Subject Name</td>
+</tr>
+</table>
+<br>
+<table class="tab" style="margin-top:5px">
+<tr>
+<th>CME-C</th>
+</tr>
+<tr>
+<td>Faculty Name</td>
+</tr>
+<tr>
+<td>Subject Name</td>
+</tr>
+</table>
+<br>
+<table class="tab" id="para2">
+<tr>
+<th>CME-A</th>
+</tr>
+<tr>
+<td>RAVALI</td>
+</tr>
+<tr>
+<td>SOFTWARE ENGINEERING</td>
+</tr>
+</table>
+<br>
+<table class="tab" id="para3">
+<tr>
+<th>CME-B</th>
+</tr>
+<tr>
+<td>MAHIMA/MAVULLAMMA</td>
+</tr>
+<tr>
+<td>JAVA/PYTHON LAB</td>
+</tr>
+</table>
+<br>
+<table class="tab" id="para4">
+<tr>
+<th>CME-C</th>
+</tr>
+<tr>
+<td>INDUSTRIAL TRAINING</td>
+</tr>
+<tr>
+<td>INDUSTRIAL TRAINING</td>
+</tr>
+</table>
+</h1>
+</body>
+</center>
+</html>

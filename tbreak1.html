@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#p1
+{
+text-align:center;
+font-size:100px;
+}
+</style>
+</head>
+
+<center>
+<body onload="startTime()" style="background-image:url('clglogo.jpg');background-size:100% 100%">
+
+<h1>
+
+<div id="txt"></div>
+
+<script type="text/javascript">
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML = "Time:" + h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000); 
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}       
+</script>
+
+<script type="text/javascript"> 
+        var myDate = new Date(); 
+        var myDay = myDate.getDay();
+        var weekday = ['Sunday', 'Monday', 'Tuesday', 
+            'Wednesday', 'Thursday', 'Friday', 'Saturday' 
+        ]; 
+        document.write("Day : " + weekday[myDay]); 
+        document.write("<br/>"); 
+</script>    
+
+<script type="text/javascript"> 
+        const date = new Date(); 
+        var mDt = myDate.getDate();
+         var myear= myDate.getFullYear();
+          var mmonth=String(myDate.getMonth()+1).padStart(2,"0");
+        document.write("Date:" +mDt+ "-" +mmonth+ "-" +myear);
+</script>
+
+<script>
+window.setInterval(function(){
+	window.location.href="t3.html";
+}, 600000)
+</script>
+<br>
+<h1 id="p1"> BREAK </h1>
+</h1>
+</body>
+</center>
+</html>
